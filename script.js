@@ -72,3 +72,10 @@ document.addEventListener('keydown', function(event) {
         updateCredits();
     }
 });
+
+// Aggiungi funzionalità tasto nascosto per ottenere crediti
+var secretButton = document.getElementById('secretButton');
+secretButton.addEventListener('click', function() {
+    credits += 15;
+    updateCredits();
+});
